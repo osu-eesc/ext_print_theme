@@ -1,0 +1,859 @@
+/* $Id: print.css */
+
+html {
+  background: none !important;
+}
+
+#url-path {
+  font-size: 10pt;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+/* underline all links */
+a:link, a:visited {
+	text-decoration: underline !important;
+	color: #000;
+}
+
+/* Don't underline header */
+#site-name a:link,
+#site-name a:visited {
+	text-decoration: none !important;
+	color: #000;
+}
+
+/* CSS2 selector to add visible href after links*/
+/*#content-region a:link:after,
+#content-region a:visited:after {
+content: " ("  attr(href) ") ";
+font-size: 0.8em;
+font-weight: normal;
+}*/
+
+
+/* Turn off any background colors or images */
+body,
+#page, #page-inner,
+#main, #main-inner,
+#content, #content-inner,
+article {
+	color: #000;
+	background-color: transparent !important;
+	background-image: none !important;
+}
+
+/* Hide sidebars and nav elements */
+#header-top-wrapper, #header-group, #rss-feed-icon, 
+#logo, #sidebar-first, /*#sidebar-last,*/ #footer-wrapper, 
+#footer-message-wrapper, #content-tabs, #breadcrumbs, 
+#comments, #admin-menu, .fusion-edit, div.tabs, .links, 
+.taxonomy,.book-navigation, .forum-topic-navigation, 
+.pager, .feed-icons, .views-admin-links, .views-field-edit-node, 
+.views-field-edit-node a, .views-ui-edit a, .contextual-links-wrapper  {
+	visibility: hidden;
+	display: none;
+}
+
+/* Otherwise, Firefox clips the content after the first page. */
+#page {
+	overflow-y: visible;
+}
+
+@media screen {
+	body {
+		padding: 50px 0 100px 0;
+		background: #F8F8F8 !important;
+	}
+
+	#limiter, #content-wrapper {
+		border: 5pt solid #EEEEEE;
+	}
+	
+	#send-to-printer input {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    border: 1px solid #000;
+    border-radius: 4px 4px 4px 4px;
+    color: #666;
+    cursor: pointer;
+    font-size: 0.75em;
+    font-weight: 700;
+    margin: 3px 10px 3px 0;
+    padding: 2px 6px;
+	}
+}
+
+	#send-to-printer input:hover {
+		background-color: #ccc;
+		color: #fff;
+	}
+
+
+@media print {
+	#send-to-printer {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+#limiter, #content-wrapper {
+	width: 7in !important;
+	padding: 0.5in !important;
+	margin: auto;
+	background: #FFFFFF !important;
+}
+body {
+	font-family: "Georgia","Times New Roman",serif;
+	font-size: 12pt;
+}
+
+.print-heading {
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+.view-article-subpages .views-field-title {
+	font-size: 12pt;
+	line-height: 1.5;
+}
+
+.view-article-subpages .views-field-title a {
+	color: 000;
+}
+
+.print-friendly-body .views-field-title, {
+	font-size: 12pt;
+}
+
+.print-friendly-body h2 {
+	font-size: 18px;
+}
+
+.print-friendly-body h3 {
+	font-size: 15px;
+}
+
+hr.bottom-bar {
+	margin-top: 50px;
+}
+
+#send-to-printer {
+	float: right;
+	padding-left: 15px;
+}
+
+.date-display-start, 
+.date-display-end,
+.date-display-single {
+	font-size: 11pt;
+}
+.date-display-end {
+	padding-right: 15px;
+}
+.views-field-field-event-link-url {
+	padding-right: 15px;
+}
+.view-header h3 {
+	padding-top: 15px;
+	font-size: 23px;
+	font-weight: normal;
+	}
+
+div.view-display-id-sidebar_related_images {
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+.view-related-images {
+    float: right;
+    padding: 0 0 0 5px;
+    width: 222px;
+}
+
+.view-related-images .views-row {
+	background-color: #FFF;
+	border: 1px solid #C8C8C8;
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+
+.views-field-field-image-description {
+	font-size: 90%;
+	font-weight: normal;
+}
+
+div.caption .c-name {
+	font-weight: bold;
+}
+
+div span.detail-3-4 {
+	font-style: italic;
+}
+
+div .c-description {
+	font-size: 90%;
+	font-weight: normal;
+}
+
+div.views-field-field-photo-copyright .copyright,
+div.views-field-field-photo-copyright .copyright a {
+	font-size: 80%;
+	line-height: 1;
+	padding-top: 0;
+}
+
+
+
+
+
+
+
+/* TODO: break these out for each handbook */
+
+/* InDesign styles (insect) */
+tbody, thead, tfoot, tr, td, th { 
+border-style : inherit;
+border-width : inherit;
+border-color : inherit;
+
+}
+td { 
+width : 10px;
+height : 5px;
+
+}
+.leftFloat { 
+float : left;
+
+}
+.rightFloat { 
+float : right;
+
+}
+tr.Row-Column-1 { 
+background-color : #cccccc;
+
+}
+
+span.regular { 
+	font-style: normal;
+}
+.superscript { 
+vertical-align : super;
+font-size: .875em;
+}
+
+.subscript { 
+vertical-align : sub;
+font-size: .875em;
+}
+.bold { 
+font-weight : bold;
+
+}
+.italic { 
+font-style : italic;
+
+}
+.bold-italic { 
+font-weight : bold;
+font-style : italic;
+
+}
+
+
+.Division-line-below {
+	border-bottom: 1px solid #ccc;
+}
+
+p.No-Paragraph-Style { 
+text-align : left;
+text-indent : 0px;
+margin : 0px;
+
+}
+
+p.table-title { 
+font-weight : bold;
+text-align : left;
+text-indent : 0px;
+margin : 12px 0px 6px 0px;
+
+}
+p.table-column-head { 
+font-weight : bold;
+text-align : center;
+text-indent : 0px;
+margin : 12px 0px 3px 0px;
+
+}
+p.table-row-head { 
+font-weight : bold;
+font-size : 0.67em;
+text-align : center;
+text-indent : 0px;
+margin : 12px 0px 3px 0px;
+
+}
+p.table-text { 
+text-align : left;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.Normal { 
+text-align : left;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.table-footnote { 
+text-align : left;
+text-indent : -15px;
+margin : 2px 0px 1px 15px;
+
+}
+p.body-text { 
+text-align : left;
+text-indent : 0px;
+
+}
+p.Index-Title { 
+font-weight : bold;
+text-align : left;
+text-indent : 0px;
+margin : 0px 0px 18px 0px;
+
+}
+p.Index-Level-3 { 
+line-height : 1.18;
+text-align : left;
+text-indent : -14px;
+margin : 0px 0px 0px 40px;
+
+}
+p.Index-Alpha-Header--w-line- { 
+font-weight : bold;
+font-size : 3em;
+text-align : left;
+text-indent : 0px;
+margin : 18px 0px 6px 0px;
+
+}
+p.Index-Level-1 { 
+font-weight : bold;
+text-align : left;
+text-indent : -28px;
+margin : 5px 0px 0px 28px;
+
+}
+p.Index-Level-2 { 
+text-align : left;
+text-indent : -21px;
+margin : 0px 0px 0px 29px;
+
+}
+p.TOC-Header { 
+font-weight : bold;
+font-size : 1.17em;
+text-align : center;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.TOC-Content-1 { 
+font-size : 0.67em;
+line-height : 1.25;
+text-align : left;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.TOC-Section-Head { 
+font-weight : bold;
+line-height : 1.11;
+text-align : left;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.TOC-Content-2 { 
+font-size : 0.67em;
+line-height : 1.24;
+text-align : left;
+text-indent : 0px;
+margin : 0px 0px 0px 10px;
+
+}
+p.TOC-Subhead { 
+line-height : 0.83;
+text-align : center;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.Contributors-Head { 
+font-weight : bold;
+font-size : 1.17em;
+text-align : left;
+text-indent : 0px;
+margin : 5px 0px;
+
+}
+p.Contributor-Level-1 { 
+text-align : left;
+text-indent : 0px;
+margin : 10px 0 0 0;
+
+}
+p.Contributor-Level-2 { 
+text-align : left;
+text-indent : -20px;
+margin : 0px 0px 2px 43px;
+
+}
+p.subhead2,
+p.Contributors-Head { 
+font-weight : bold;
+font-size: 1.4em;
+
+}
+p.crop-and-pest-name { 
+font-weight : bold;
+text-align : left;
+text-indent : 0px;
+margin : 12px 0px 2px 0px;
+
+}
+p.pest-sci-name { 
+	font-style : italic;
+	margin-bottom: 0 0 0 0.75em;
+}
+
+li.controls1 { 
+text-align : left;
+margin-right : 0px;
+margin-top : 1px;
+margin-bottom : 1px;
+
+}
+p.Includes,
+p.mgmt-head,
+p.nursery-pests { 
+font-weight : bold;
+font-size: 1.1em;
+}
+
+.Includes {
+	margin-bottom: 0;
+}
+
+}
+p.subhead3,
+p.subhead-xmas-tree { 
+font-weight : bold;
+font-size: 1.3em;
+
+}
+
+
+}
+li.indented-list { 
+text-align : left;
+margin-right : 0px;
+margin-top : 1px;
+margin-bottom : 0px;
+
+}
+p.chapter-head { 
+font-weight : bold;
+text-align : left;
+text-indent : 0px;
+margin : 18px 0px 12px 0px;
+
+}
+p.section-head-w-line { 
+font-weight : bold;
+font-size : 1.17em;
+text-align : left;
+text-indent : 0px;
+margin : 36px 0px 6px 0px;
+
+}
+p.author { 
+text-align : left;
+text-indent : 0px;
+margin : 2px 0px 6px 0px;
+
+}
+
+li.controls2 { 
+text-align : left;
+margin-right : 0px;
+margin-top : 1px;
+margin-bottom : 1px;
+
+}
+p.mgmt-subhead { 
+font-style : italic;
+}
+li.controls3 { 
+text-align : left;
+margin-right : 0px;
+margin-top : 1px;
+margin-bottom : 1px;
+
+}
+p.table-text-centered { 
+text-align : center;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.INCLUDES-MANAGEMENT-OPTIONS { 
+font-weight : bold;
+font-style : italic;
+text-align : left;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.APPLESTAGE { 
+font-weight : bold;
+font-style : italic;
+font-size: 1.1em;
+text-transform: uppercase;
+}
+
+p.Basic-Paragraph { 
+text-align : left;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.subhead4,
+p.subhead4--with-rule-below- { 
+font-size: 1.1em;
+font-weight: bold;
+
+}
+p.indented-list--no-numbers- { 
+text-align : left;
+text-indent : -11px;
+margin : 1px 0px 0px 22px;
+
+}
+p.footer-text-left { 
+text-align : left;
+text-indent : 0px;
+margin : 0px;
+
+}
+p.intro-body-text { 
+text-align : left;
+text-indent : 0px;
+
+}
+
+p.subhead-xmas-tree { 
+text-align : left;
+text-indent : 0px;
+
+}
+p.footer-text-right { 
+text-align : right;
+text-indent : 0px;
+margin : 0px;
+
+}
+
+table.No-Table-Style { 
+border-collapse : collapse;
+border-width : 1px;
+border-style : solid;
+border-margin-top : 4px;
+margin-bottom : -4px;
+
+}
+table.Aphids-and-Adelgids-Table { 
+  width: 100%;
+  border: 1px solid #000;
+}
+table.Sample-Table { 
+border-collapse : collapse;
+border-width : 1px;
+border-style : solid;
+border-margin-top : 4px;
+margin-bottom : -4px;
+
+}
+
+table.Aphids-and-Adelgids-Table tbody tr td {
+  width: 50%;
+}
+td.Cell-Shade-20 { 
+background-color : #cccccc;
+padding-top : 4px;
+padding-bottom : 4px;
+padding-left : 5px;
+padding-right : 4px;
+
+}
+td.Title-Cell-0 { 
+
+}
+td.Standard-Cell { 
+
+}
+td.Footer-Cell-0 { 
+padding-top : 5px;
+
+}
+td.Cell-Shade-40 { 
+background-color : #999999;
+
+}
+
+#menu-bar .block {
+	/*font-size: 93.5%;*/
+  text-transform: none;
+}
+
+
+/* Superfish overrides */
+li#menu-480-1 {
+	padding: 0.75em 1em;
+	color: #fff;
+}
+
+.sf-menu.sf-style-space-teal a {
+	border: none;
+}
+
+
+#menu-wrapper {
+	box-shadow: none;
+	top: 0;
+}
+
+#menu-bar {
+	background: transparent;
+}
+
+#block-menu-menu-front-sidebar-menu.block ul li {
+	font-size: 0.8em;
+}
+/* remove "you are here" from breadcrumb */
+#breadcrumb h2 {
+	display: none;
+}
+
+.field-name-field-author,
+.field-name-field-revision-date {
+	font-size: .875em;
+	/*margin-bottom: 1em;*/
+}
+
+.field-name-field-revision-date {
+	font-style: italic;
+	/*margin-bottom: 1em;*/
+}
+
+article header {
+	margin-bottom: 0;
+}
+
+.field-name-field-article-options {
+	/*margin-top: 0.5em;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: .875em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+/*  insect table styles */
+p.table-title {
+	font-family : Arial, sans-serif;
+	font-weight : bold;
+	font-style : normal;
+	font-size : 0.83em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 1.2;
+	text-align : left;
+	color : #000000;
+	text-indent : 0px;
+	margin : 12px 0px 9px 0px;
+}
+p.table-column-head {
+	font-family : Arial, sans-serif;
+	font-weight : bold;
+	font-style : normal;
+	font-size : 0.75em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 1.2;
+	text-align : center;
+	color : #000000;
+	text-indent : 0px;
+	margin : 12px 0px 3px 0px;
+}
+p.table-row-head {
+	font-weight : bold;
+	font-style : normal;
+	font-size : 0.75em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 1.2;
+	text-align : center;
+	color : #000000;
+	text-indent : 0px;
+	margin : 12px 0px 3px 0px;
+}
+p.table-text {
+	font-weight : normal;
+	font-style : normal;
+	font-size : 0.75em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 1.2;
+	text-align : left;
+	color : #000000;
+	text-indent : 0px;
+	margin : 0px;
+}
+p.table-text-centered {
+	font-size : 0.75em;
+	line-height : 1.2;
+	text-align : center;
+	margin : 0px;
+}
+
+p.table-footnote {
+	font-weight : normal;
+	font-style : normal;
+	font-size : 0.67em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 1.2;
+	text-align : left;
+	color : #000000;
+	text-indent : 0px;
+	margin : 5px 0px 1px 0px;
+}
+
+p.table-column-head-left {
+	font-weight : bold;
+	font-style : normal;
+	font-size : 0.75em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 1.2;
+	text-align : left;
+	color : #000000;
+	text-indent : 0px;
+	margin : 12px 0px 3px 0px;
+}
+p.table-row-head-left {
+	font-weight : bold;
+	font-style : normal;
+	font-size : 0.75em;
+	text-decoration : none;
+	font-variant : normal;
+	line-height : 1.2;
+	text-align : left;
+	color : #000000;
+	text-indent : 0px;
+	margin : 12px 0px 3px 0px;
+}
+table.Basic-Table {
+	border-collapse : collapse;
+	border: none;
+	margin-top : 4px;
+	margin-bottom : -4px;
+}
+td {
+	vertical-align: top;
+}
+td.Cell-Style-1 {
+	padding-top : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	padding-right : 5px;
+	border: 1px solid;
+
+}
+td.Cell-Style-2 {
+	background-color : #cccccc;
+	padding-top : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	padding-right : 5px;
+	border: 1px solid;
+}
+td.Cell-Style-3 {
+	padding-top : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	padding-right : 5px;
+	border: none;
+}
+td.Cell-Style-4 {
+	background-color : #cccccc;
+	padding-top : 5px;
+	padding-bottom : 5px;
+	padding-left : 5px;
+	padding-right : 5px;
+	border: none;
+}
+
+fieldset#node_article_full_group_author_date,
+fieldset#node_page_full_group_author_date  {
+	border: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.field-name-field-styled-title {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+/* make views tables look good */
+div.view-related-content table.views-table tbody tr td {
+	width: auto;
+}
+
+div.view-related-content table.views-table tbody tr td {
+	font-size: 0.875em;
+}
+
+div.view-id-section_contents table {
+	width: 75%;
+}
+
+div.view-id-section_contents div.view-header {
+	margin-top: 1em;
+	font-size: 1.125em;
+	font-weight: bold;
+}
+
+div.view-id-section_contents table.views-table tbody, thead, tfoot, tr, td, th {
+	border: 1px solid #D5D5D5;
+	padding: 0.5em 1.0em;
+}
+
+div.view-id-section_contents table.views-table tbody tr td {
+	font-size: 0.875em;
+}
