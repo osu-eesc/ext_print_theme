@@ -1,4 +1,4 @@
-doug-fir-ext-subtheme
+ext_print_theme
 =====================
 
-OSU Doug Fir Subtheme for Extension sites
+Print-friendly theme for Extension sites
